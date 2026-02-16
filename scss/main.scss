@@ -1,0 +1,87 @@
+@use 'vars/vars' as *;
+@use './components/main-header/main-header';
+@use './components/welcome-section/welcome-section';
+@use './components/first-mission-section/first-mission-section';
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.02em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 57.6px;
+    color: $welcome-text-color;
+
+    @media screen and (min-width: $width-menu-xl) {
+        font-size: 64px;
+        line-height: 76.8px;
+    }
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    color: $text-color;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38.4px;
+    color: $text-color;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: $text-color;
+}
+
+p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: $text-color;
+}
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+.primary-button {
+    background-color: $button-primary-color;
+    border-radius: $border-radius-lg;
+    border: $border-secondary;
+    max-width: 15rem;
+    padding: 0.5rem;
+    &:hover {
+        background-color: $button-primary-hover-color;
+    }
+}

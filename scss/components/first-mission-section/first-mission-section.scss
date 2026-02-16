@@ -1,0 +1,11 @@
+@use '../../vars/vars' as *;
+@use '../../mixins/mixins' as *;
+
+.first-mission-section {
+    background-color: $white-color;
+    @include flex-center();
+    gap: 2rem;
+    padding: 4rem;
+    border-radius: 40px 40px 0 0;
+    @include previous-background($primary-color-3);
+}

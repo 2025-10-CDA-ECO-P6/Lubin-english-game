@@ -1,0 +1,24 @@
+@use '../../vars/vars' as *;
+
+.welcome-section {
+    background-color: $primary-color-3;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+    padding: 4rem;
+    &__image {
+        width: 50%;
+        height: 100%;
+        border-radius: $border-radius-lg;
+        border: $border-secondary;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        &--text {
+            color: $welcome-text-color;
+        }
+    }
+}
