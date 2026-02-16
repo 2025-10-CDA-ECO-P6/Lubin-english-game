@@ -1,0 +1,59 @@
+.store-content-section {
+  padding: 4rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  position: relative;
+  color: white;
+  background-color: #43bdcd;
+  border-radius: 40px 40px 0 0;
+}
+.store-content-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+}
+.store-content-section__title {
+  color: white;
+  z-index: 10;
+}
+.store-content-section__list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  z-index: 10;
+}
+.store-content-section__list--item {
+  width: 30%;
+  height: 100%;
+}
+.store-content-section__list--item__title, .store-content-section__list--item__text {
+  color: white;
+}
+.store-content-section__list--item__img {
+  width: 100%;
+  background-color: white;
+  border-radius: 40px;
+}
+.store-content-section::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: -10%;
+  width: 100%;
+  height: 40rem;
+  background: url(../../../assets/icons/airplay.svg);
+  opacity: 0.5;
+  background-size: cover;
+  z-index: 0;
+}
+
+/*# sourceMappingURL=store-content-section.css.map */

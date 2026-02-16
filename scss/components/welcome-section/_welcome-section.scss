@@ -2,23 +2,60 @@
 
 .welcome-section {
     background-color: $primary-color-3;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 4rem;
     padding: 4rem;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+
+    grid-template-areas:
+        'title image'
+        'text image'
+        'button image';
+
+    h1 {
+        grid-area: title;
+    }
+
+    &--text {
+        grid-area: text;
+        color: $welcome-text-color;
+    }
+
+    .primary-button {
+        grid-area: button;
+        width: fit-content;
+    }
+
     &__image {
-        width: 50%;
-        height: 100%;
+        grid-area: image;
+        width: 100%;
+        height: auto;
         border-radius: $border-radius-lg;
         border: $border-secondary;
+        object-fit: cover;
     }
-    &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 50%;
-        &--text {
-            color: $welcome-text-color;
+}
+@media (max-width: 768px) {
+    .welcome-section {
+        padding: 2rem;
+        text-align: center;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+        grid-template-areas:
+            'title'
+            'image'
+            'text'
+            'button';
+
+        &__image {
+            width: 100%;
+        }
+        .button-welcome {
+            margin: 0 auto;
         }
     }
 }

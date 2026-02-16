@@ -2,6 +2,8 @@
 @use './components/main-header/main-header';
 @use './components/welcome-section/welcome-section';
 @use './components/first-mission-section/first-mission-section';
+@use './components/store-content-section/store-content-section';
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -20,7 +22,7 @@ p {
 }
 a {
     text-decoration: none;
-    color: inherit;
+    color: $white-color;
 }
 
 ul {
@@ -50,7 +52,7 @@ h2 {
 
 h3 {
     font-weight: 600;
-    font-size: 32px;
+    font-size: 1.25rem;
     line-height: 38.4px;
     color: $text-color;
 }
@@ -64,9 +66,9 @@ h4 {
 
 p {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1rem;
     line-height: 28px;
-    color: $text-color;
+    color: $white-color;
 }
 button {
     background-color: transparent;

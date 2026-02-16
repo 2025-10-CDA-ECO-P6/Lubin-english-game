@@ -4,6 +4,12 @@
     align-items: center;
     justify-content: center;
 }
+@mixin flex-start($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: flex-start;
+    justify-content: space-between;
+}
 
 @mixin previous-background($color) {
     &::before {

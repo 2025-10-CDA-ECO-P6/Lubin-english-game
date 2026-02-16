@@ -1,0 +1,47 @@
+@use '../../vars/vars' as *;
+@use '../../mixins/mixins' as *;
+
+.store-content-section {
+    padding: 4rem 8rem;
+    @include flex-center();
+    gap: 4rem;
+    position: relative;
+    color: $white-color;
+    background-color: $primary-color-4;
+    border-radius: $border-radius-section;
+
+    @include previous-background($white-color);
+    &__title {
+        color: $white-color;
+        z-index: 10;
+    }
+    &__list {
+        @include flex-start(row);
+        z-index: 10;
+        &--item {
+            width: 30%;
+            height: 100%;
+            &__title,
+            &__text {
+                color: $white-color;
+            }
+            &__img {
+                width: 100%;
+                background-color: $white-color;
+                border-radius: $border-radius-lg;
+            }
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0%;
+        left: -10%;
+        width: 100%;
+        height: 40rem;
+        background: url(../../../assets/icons/airplay.svg);
+        opacity: 0.5;
+        background-size: cover;
+        z-index: 0;
+    }
+}

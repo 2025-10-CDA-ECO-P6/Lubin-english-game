@@ -6,7 +6,6 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 6px solid $primary-color-2;
-
     .main-nav {
         .main-nav-list {
             display: flex;
@@ -28,6 +27,34 @@
                     align-items: center;
                     justify-content: center;
                     gap: 0.5rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .main-header {
+        position: fixed;
+        top: auto;
+        width: 100%;
+        bottom: 0;
+        z-index: 100;
+        .main-nav {
+            width: 100%;
+            .main-nav-list {
+                gap: 1rem;
+                justify-content: space-between;
+                width: 100%;
+                .main-nav-item {
+                    width: auto;
+                    height: 2.5rem;
+                    width: 2.5rem;
+                    p {
+                        display: none;
+                    }
+                }
+                .main-nav-item-logo {
+                    display: none;
                 }
             }
         }
