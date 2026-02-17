@@ -1,0 +1,86 @@
+@use '../../mixins/mixins' as *;
+@use '../../vars/vars' as *;
+
+.project-section {
+    padding: $padding-section;
+    @include flex-center();
+    gap: 4rem;
+    position: relative;
+    background-color: $primary-color-3;
+    border-radius: $border-radius-section;
+    @include previous-background($primary-color-4);
+    &__info-content {
+        @include flex-center();
+        gap: 2rem;
+        color: $welcome-text-color;
+        z-index: 10;
+        &__title {
+            color: $welcome-text-color;
+        }
+        &__text {
+            color: $welcome-text-color;
+            text-align: center;
+        }
+    }
+    &__list-content {
+        display: flex;
+        justify-content: space-between;
+        &-item {
+            width: 30%;
+            background-color: $primary-color-1;
+            border: 1px solid $secondary-color-1;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            justify-content: center;
+            border-radius: $border-radius-lg;
+            align-items: center;
+            &__title {
+                color: $welcome-text-color;
+            }
+            &__text {
+                color: $welcome-text-color;
+                text-align: center;
+            }
+            &__upload-form {
+                display: flex;
+                flex-direction: column;
+                gap: 2.5rem;
+                &__input {
+                    color: $welcome-text-color;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: end;
+                    justify-content: end;
+                    gap: 0.5rem;
+                    text-align: start;
+                    width: 100%;
+
+                    padding: 10px;
+                    background-color: $primary-color-2;
+                    border: 2px dashed $white-color;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    transition: background-color 0.5s;
+                    transition: transform 0.5s;
+                    &:hover,
+                    &:active {
+                        background-color: $secondary-color-1;
+                        transform: scale(0.95);
+                    }
+                    input {
+                        width: 100%;
+                        height: 1.5rem;
+                        display: none;
+                    }
+                    .project-section__list-content-item__upload-form__file-name {
+                        text-align: end;
+                        color: $welcome-text-color;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+}

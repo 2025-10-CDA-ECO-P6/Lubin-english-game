@@ -1,0 +1,98 @@
+.project-section {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  position: relative;
+  background-color: #073c45;
+  border-radius: 40px 40px 0 0;
+}
+.project-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #43bdcd;
+  z-index: -1;
+}
+.project-section__info-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: #cffdf8;
+  z-index: 10;
+}
+.project-section__info-content__title {
+  color: #cffdf8;
+}
+.project-section__info-content__text {
+  color: #cffdf8;
+  text-align: center;
+}
+.project-section__list-content {
+  display: flex;
+  justify-content: space-between;
+}
+.project-section__list-content-item {
+  width: 30%;
+  background-color: #177079;
+  border: 1px solid #ffbd1d;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  justify-content: center;
+  border-radius: 40px;
+  align-items: center;
+}
+.project-section__list-content-item__title {
+  color: #cffdf8;
+}
+.project-section__list-content-item__text {
+  color: #cffdf8;
+  text-align: center;
+}
+.project-section__list-content-item__upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.project-section__list-content-item__upload-form__input {
+  color: #cffdf8;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  gap: 0.5rem;
+  text-align: start;
+  width: 100%;
+  padding: 10px;
+  background-color: #19a9b1;
+  border: 2px dashed white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  transition: transform 0.5s;
+}
+.project-section__list-content-item__upload-form__input:hover, .project-section__list-content-item__upload-form__input:active {
+  background-color: #ffbd1d;
+  transform: scale(0.95);
+}
+.project-section__list-content-item__upload-form__input input {
+  width: 100%;
+  height: 1.5rem;
+  display: none;
+}
+.project-section__list-content-item__upload-form__input .project-section__list-content-item__upload-form__file-name {
+  text-align: end;
+  color: #cffdf8;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=project-section.css.map */

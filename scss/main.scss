@@ -3,6 +3,8 @@
 @use './components/welcome-section/welcome-section';
 @use './components/first-mission-section/first-mission-section';
 @use './components/store-content-section/store-content-section';
+@use './components/learning-section/learning-section';
+@use './components/project-section/project-section';
 
 * {
     box-sizing: border-box;
@@ -52,7 +54,7 @@ h2 {
 
 h3 {
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 38.4px;
     color: $text-color;
 }
@@ -79,11 +81,21 @@ button {
 
 .primary-button {
     background-color: $button-primary-color;
+    &:hover {
+        background-color: $secondary-color-1;
+    }
+}
+.button {
     border-radius: $border-radius-lg;
-    border: $border-secondary;
+    height: 2.5rem;
     max-width: 15rem;
     padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+.secondary-button {
+    background-color: $secondary-color-1;
+
     &:hover {
-        background-color: $button-primary-hover-color;
+        background-color: $button-primary-color;
     }
 }
