@@ -1,0 +1,10 @@
+@use '../../vars/vars' as *;
+@use '../../mixins/mixins' as *;
+
+.footer {
+    background-color: $primary-color-1;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    border-top: 1px solid $white-color-2;
+}
