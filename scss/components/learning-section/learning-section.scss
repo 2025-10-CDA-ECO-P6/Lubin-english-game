@@ -8,19 +8,9 @@
     border-radius: $border-radius-section;
     background-color: $white-color;
     gap: 2rem;
-    @include previous-background($primary-color-1);
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0%;
-        left: -10%;
-        width: 60%;
-        height: 40rem;
-        background: url(../../../assets/icons/map.svg);
-        opacity: 0.5;
-        background-size: cover;
-        z-index: 0;
-    }
+    @include previous-background($primary-color-3);
+    @include background-image('../../../assets/icons/map.svg');
+
     p {
         color: $text-color;
         max-width: 600px;
@@ -103,6 +93,21 @@
                         border-bottom-right-radius: 0.8rem;
                         box-shadow: 0.375rem 0.375rem $white-color;
                     }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .card-section {
+        padding: $padding-section-mobile;
+        .card-section__cards-content {
+            &--list {
+                flex-direction: column;
+                gap: 2rem;
+                width: 100%;
+                &--card {
+                    width: 100%;
                 }
             }
         }

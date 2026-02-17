@@ -16,7 +16,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #177079;
+  background-color: #073c45;
   z-index: -1;
 }
 .card-section::after {
@@ -24,12 +24,18 @@
   position: absolute;
   top: 0%;
   left: -10%;
-  width: 60%;
+  width: 150%;
   height: 40rem;
-  background: url(../../../assets/icons/map.svg);
+  background-size: cover;
+  background: url("../../../assets/icons/map.svg");
   opacity: 0.5;
   background-size: cover;
   z-index: 0;
+}
+@media (max-width: 768px) {
+  .card-section::after {
+    left: -50%;
+  }
 }
 .card-section p {
   color: #147076;
@@ -116,6 +122,20 @@
   right: 5.5rem;
   border-bottom-right-radius: 0.8rem;
   box-shadow: 0.375rem 0.375rem white;
+}
+
+@media (max-width: 768px) {
+  .card-section {
+    padding: 1rem;
+  }
+  .card-section .card-section__cards-content--list {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+  .card-section .card-section__cards-content--list--card {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=learning-section.css.map */

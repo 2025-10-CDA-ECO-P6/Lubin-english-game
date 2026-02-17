@@ -19,6 +19,24 @@
   background-color: #43bdcd;
   z-index: -1;
 }
+.project-section::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: -10%;
+  width: 150%;
+  height: 40rem;
+  background-size: cover;
+  background: url("../../../assets/icons/bell.svg");
+  opacity: 0.5;
+  background-size: cover;
+  z-index: 0;
+}
+@media (max-width: 768px) {
+  .project-section::after {
+    left: -50%;
+  }
+}
 .project-section__info-content {
   display: flex;
   flex-direction: column;
@@ -38,6 +56,7 @@
 .project-section__list-content {
   display: flex;
   justify-content: space-between;
+  z-index: 10;
 }
 .project-section__list-content-item {
   width: 30%;
@@ -93,6 +112,22 @@
   text-align: end;
   color: #cffdf8;
   font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .project-section {
+    padding: 1rem;
+  }
+  .project-section__info-content {
+    text-align: center;
+  }
+  .project-section__list-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .project-section__list-content-item {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=project-section.css.map */

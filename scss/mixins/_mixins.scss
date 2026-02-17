@@ -23,3 +23,24 @@
         z-index: -1;
     }
 }
+
+@mixin background-image($image) {
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0%;
+        left: -10%;
+        width: 150%;
+        height: 40rem;
+        background-size: cover;
+        background: url($image);
+        opacity: 0.5;
+        background-size: cover;
+        z-index: 0;
+    }
+    @media (max-width: 768px) {
+        &::after {
+            left: -50%;
+        }
+    }
+}

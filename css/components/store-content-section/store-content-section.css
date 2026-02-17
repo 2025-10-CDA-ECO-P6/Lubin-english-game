@@ -20,6 +20,24 @@
   background-color: #e6e6e6;
   z-index: -1;
 }
+.store-content-section::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: -10%;
+  width: 150%;
+  height: 40rem;
+  background-size: cover;
+  background: url("../../../assets/icons/send.svg");
+  opacity: 0.5;
+  background-size: cover;
+  z-index: 0;
+}
+@media (max-width: 768px) {
+  .store-content-section::after {
+    left: -50%;
+  }
+}
 .store-content-section__title {
   color: white;
   z-index: 10;
@@ -42,18 +60,6 @@
   width: 100%;
   background-color: white;
   border-radius: 40px;
-}
-.store-content-section::after {
-  content: "";
-  position: absolute;
-  top: 0%;
-  left: -10%;
-  width: 60%;
-  height: 40rem;
-  background: url(../../../assets/icons/send.svg);
-  opacity: 0.5;
-  background-size: cover;
-  z-index: 0;
 }
 
 @media (max-width: 768px) {
@@ -83,9 +89,6 @@
   }
   .store-content-section__list--item-impair__img {
     border-radius: 0 40px 40px 0;
-  }
-  .store-content-section::after {
-    display: none;
   }
 }
 
