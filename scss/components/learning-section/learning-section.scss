@@ -9,7 +9,7 @@
     background-color: $white-color;
     gap: 2rem;
     @include previous-background($primary-color-3);
-    @include background-image('../../../assets/icons/map.svg');
+    @include background-image('../assets/icons/map.svg');
 
     p {
         color: $text-color;

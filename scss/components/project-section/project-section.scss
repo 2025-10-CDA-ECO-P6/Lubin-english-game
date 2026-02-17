@@ -9,7 +9,7 @@
     background-color: $primary-color-3;
     border-radius: $border-radius-section;
     @include previous-background($primary-color-4);
-    @include background-image('../../../assets/icons/bell.svg');
+    @include background-image('../assets/icons/bell.svg');
     &__info-content {
         @include flex-center();
         gap: 2rem;

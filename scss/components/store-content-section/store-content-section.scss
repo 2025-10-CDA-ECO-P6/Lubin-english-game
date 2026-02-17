@@ -11,7 +11,7 @@
     border-radius: $border-radius-section;
 
     @include previous-background($white-color-2);
-    @include background-image('../../../assets/icons/send.svg');
+    @include background-image('../assets/icons/send.svg');
     &__title {
         color: $white-color;
         z-index: 10;
