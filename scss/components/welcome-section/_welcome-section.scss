@@ -2,7 +2,7 @@
 
 .welcome-section {
     background-color: $primary-color-3;
-    padding: 4rem;
+    padding: $padding-section;
     margin: 0 auto;
 
     display: grid;
@@ -40,7 +40,7 @@
 }
 @media (max-width: 768px) {
     .welcome-section {
-        padding: 2rem;
+        padding: $padding-section-mobile;
         text-align: center;
         grid-template-columns: 1fr;
         gap: 2rem;

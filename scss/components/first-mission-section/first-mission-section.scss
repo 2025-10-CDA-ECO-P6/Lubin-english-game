@@ -3,10 +3,19 @@
 
 .first-mission-section {
     position: relative;
-    background-color: $white-color;
+    background-color: $white-color-2;
     @include flex-center();
     gap: 2rem;
-    padding: 4rem;
+    padding: $padding-section;
     border-radius: $border-radius-section;
     @include previous-background($primary-color-3);
+    p {
+        color: $text-color;
+    }
+}
+@media (max-width: 768px) {
+    .first-mission-section {
+        padding: $padding-section-mobile;
+        text-align: center;
+    }
 }
