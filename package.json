@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "sass": "sass --watch scss:css"
+        "sass": "sass scss/main.scss css/main.css --style=compressed"
     },
     "devDependencies": {
         "sass": "^1.97.3"
