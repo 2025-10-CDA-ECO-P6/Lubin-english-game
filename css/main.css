@@ -158,11 +158,11 @@
 .store-content-section::after {
   content: "";
   position: absolute;
-  top: 0%;
+  top: 0;
   left: -10%;
-  width: 150%;
+  width: 80%;
   height: 40rem;
-  background-size: cover;
+  background-size: contain;
   background: url("../assets/icons/send.svg");
   opacity: 0.5;
   background-size: cover;
@@ -170,7 +170,8 @@
 }
 @media (max-width: 768px) {
   .store-content-section::after {
-    left: -50%;
+    left: -10%;
+    width: 100%;
   }
 }
 .store-content-section__title {
@@ -244,17 +245,17 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #073c45;
+  background-color: #43bdcd;
   z-index: -1;
 }
 .card-section::after {
   content: "";
   position: absolute;
-  top: 0%;
+  top: 0;
   left: -10%;
-  width: 150%;
+  width: 80%;
   height: 40rem;
-  background-size: cover;
+  background-size: contain;
   background: url("../assets/icons/map.svg");
   opacity: 0.5;
   background-size: cover;
@@ -262,7 +263,8 @@
 }
 @media (max-width: 768px) {
   .card-section::after {
-    left: -50%;
+    left: -10%;
+    width: 100%;
   }
 }
 .card-section p {
@@ -326,7 +328,6 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  background-color: #ffbd1d;
   border-radius: 0.8rem;
   z-index: 10;
   outline: 0.5rem solid white;
@@ -389,11 +390,11 @@
 .project-section::after {
   content: "";
   position: absolute;
-  top: 0%;
+  top: 0;
   left: -10%;
-  width: 150%;
+  width: 80%;
   height: 40rem;
-  background-size: cover;
+  background-size: contain;
   background: url("../assets/icons/bell.svg");
   opacity: 0.5;
   background-size: cover;
@@ -401,7 +402,8 @@
 }
 @media (max-width: 768px) {
   .project-section::after {
-    left: -50%;
+    left: -10%;
+    width: 100%;
   }
 }
 .project-section__info-content {
@@ -496,10 +498,69 @@
     width: 100%;
   }
 }
+.schedule-section {
+  border-radius: 40px 40px 0 0;
+  background-color: #43bdcd;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+.schedule-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 80%;
+  height: 40rem;
+  background-size: contain;
+  background: url("../assets/icons/calendar.svg");
+  opacity: 0.5;
+  background-size: cover;
+  z-index: 0;
+}
+@media (max-width: 768px) {
+  .schedule-section::after {
+    left: -10%;
+    width: 100%;
+  }
+}
+.schedule-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+}
+.schedule-section__title {
+  color: #cffdf8;
+}
+.schedule-section__text {
+  text-align: center;
+  color: #cffdf8;
+}
+.schedule-section__image {
+  grid-area: image;
+  width: 60%;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+body {
+  background-color: #073c45;
 }
 
 h1,

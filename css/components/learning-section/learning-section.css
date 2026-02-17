@@ -16,17 +16,17 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #073c45;
+  background-color: #43bdcd;
   z-index: -1;
 }
 .card-section::after {
   content: "";
   position: absolute;
-  top: 0%;
+  top: 0;
   left: -10%;
-  width: 150%;
+  width: 80%;
   height: 40rem;
-  background-size: cover;
+  background-size: contain;
   background: url("../assets/icons/map.svg");
   opacity: 0.5;
   background-size: cover;
@@ -34,7 +34,8 @@
 }
 @media (max-width: 768px) {
   .card-section::after {
-    left: -50%;
+    left: -10%;
+    width: 100%;
   }
 }
 .card-section p {
@@ -98,7 +99,6 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  background-color: #ffbd1d;
   border-radius: 0.8rem;
   z-index: 10;
   outline: 0.5rem solid white;

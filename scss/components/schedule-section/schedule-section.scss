@@ -1,0 +1,30 @@
+@use '../../vars/vars' as *;
+@use '../../mixins/mixins' as *;
+
+.schedule-section {
+    border-radius: $border-radius-section;
+    background-color: $primary-color-4;
+    padding: $padding-section;
+    @include flex-center();
+    gap: 2rem;
+    position: relative;
+    @include background-image('../assets/icons/calendar.svg');
+    @include previous-background($white-color);
+
+    &__title {
+        color: $welcome-text-color;
+    }
+
+    &__text {
+        text-align: center;
+        color: $welcome-text-color;
+    }
+
+    &__image {
+        grid-area: image;
+        width: 60%;
+        height: auto;
+        border-radius: 1rem;
+        object-fit: cover;
+    }
+}
